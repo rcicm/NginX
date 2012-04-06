@@ -1,14 +1,6 @@
-Howto install a VirtualBox Machine CentOS with Vagrant on Mac OSX 10.6
-Author
+h1. How to compile and install Nginx from the source (With a sample of nginx.conf)
 
-Bla <bla@gmail.com>
-https://github.com/rcicm
-
-
-
-<h1> How to compile and install Nginx from the source (With a sample of nginx.conf) </h1>
-
-<h2> Author </h2>
+h2. Author
 
 Rafael Inocencio <rafael_rci@yahoo.com.br>
 https://github.com/rcicm
