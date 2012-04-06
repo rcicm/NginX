@@ -35,8 +35,12 @@ h3. Configuring:
 # Entering in the nginx directory
 $ cd nginx-1.1.17/
 
-# Run the configure setting the PCRE and ZLIB unpackeged paths (You can ignore the "--ad-module" if dont want use any of these modules)
-$ ./configure --prefix=/opt/nginx --with-pcre=/[PATH_UNPACKING]/pcre-8.30/ --with-zlib=/[PATH_UNPACKING]/zlib-1.2.6 --with-http_flv_module --with-http_gzip_static_module --with-http_stub_status_module --add-module=/[PATH_UNPACKING]/http_healthcheck/ --add-module=/[PATH_UNPACKING]/headers_more --add-module=/[PATH_UNPACKING]/ngx_http_log_request_speed/ --add-module=/[PATH_UNPACKING]/naxsi-0.43-1/naxsi_src/
+# Run the configure setting the PCRE and ZLIB unpackeged paths (You can ignore the "--ad-module" if dont want
+# use any of these modules)
+$ ./configure --prefix=/opt/nginx --with-pcre=/[PATH_UNPACKING]/pcre-8.30/ --with-zlib=/[PATH_UNPACKING]/zlib-1.2.6 \
+--with-http_flv_module --with-http_gzip_static_module --with-http_stub_status_module \
+--add-module=/[PATH_UNPACKING]/http_healthcheck/ --add-module=/[PATH_UNPACKING]/headers_more \
+--add-module=/[PATH_UNPACKING]/ngx_http_log_request_speed/ --add-module=/[PATH_UNPACKING]/naxsi-0.43-1/naxsi_src/
 
 $ make
 
