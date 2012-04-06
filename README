@@ -1,6 +1,6 @@
-h1. How to compile and install Nginx from the source (With a sample of nginx.conf) 
+<h1> How to compile and install Nginx from the source (With a sample of nginx.conf) </h1>
 
-h2. Author
+<h2> Author </h2>
 
 Rafael Inocencio <rafael_rci@yahoo.com.br>
 https://github.com/rcicm
