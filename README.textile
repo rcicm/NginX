@@ -1,6 +1,28 @@
-h1. How to compile and install Nginx from the source (With a sample of nginx.conf)
+h1. How to compile and install Nginx from the source on Linux (With a sample of nginx.conf)
+
+h2. Downloading Packages:
+NginX - http://wiki.nginx.org/Install
+Zlib  - http://zlib.net/                  (Allow to use gzip to compress content before delivery to clients with gzip-enable)
+PCRE  - http://www.pcre.org/              (Allow to use Regular expressions in rewrite configuration)
+
+Addons (Third party modules used by my own test - Not necessary in a basic instalation):
+Http Healthcheck - http://wiki.nginx.org/HttpHealthcheckModule
+Headers More     - http://wiki.nginx.org/HttpHeadersMoreModule
+Log RequestSpeed - http://wiki.nginx.org/HttpLogRequestSpeed
+Naxsi            - http://code.google.com/p/naxsi/
 
 
+h2. Unpacking:
+tar -xzvf nginx-1.1.17.tar.gz
+tar -xzvf pcre-8.30.tar.gz
+tar -xzvf zlib-1.2.6.tar.gz
+
+h2. Configuring:
+./configure --prefix=/opt/nginx --with-pcre=/root/pcre-8.30/ --with-zlib=/root/zlib-1.2.6 --with-http_flv_module --with-http_gzip_static_module --with-http_stub_status_module --add-module=/root/http_healthcheck/ --add-module=/root/headers_more --add-module=/root/ngx_http_log_request_speed/ --add-module=/root/naxsi-0.43-1/naxsi_src/
+
+make
+
+make install 
 
 
 h2. Author:
