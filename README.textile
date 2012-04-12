@@ -12,7 +12,6 @@ Addons (Third party modules used by my own test - Not necessary in a basic insta
 Http Healthcheck - http://wiki.nginx.org/HttpHealthcheckModule
 Headers More     - http://wiki.nginx.org/HttpHeadersMoreModule
 Log RequestSpeed - http://wiki.nginx.org/HttpLogRequestSpeed
-Naxsi            - http://code.google.com/p/naxsi/
 
 
 
@@ -40,7 +39,7 @@ $ cd nginx-1.1.17/
 $ ./configure --prefix=/opt/nginx --with-pcre=/[PATH_UNPACKING]/pcre-8.30/ --with-zlib=/[PATH_UNPACKING]/zlib-1.2.6 \
 --with-http_flv_module --with-http_gzip_static_module --with-http_stub_status_module \
 --add-module=/[PATH_UNPACKING]/http_healthcheck/ --add-module=/[PATH_UNPACKING]/headers_more \
---add-module=/[PATH_UNPACKING]/ngx_http_log_request_speed/ --add-module=/[PATH_UNPACKING]/naxsi-0.43-1/naxsi_src/
+--add-module=/[PATH_UNPACKING]/ngx_http_log_request_speed/
 
 $ make
 
